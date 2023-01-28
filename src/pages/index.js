@@ -1,11 +1,14 @@
+import NextLink from 'next/link';
 import {
   Container,
   Box,
   Heading,
-  Image
+  Image,
+  Button
 } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
+import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const Home = () => {
   return (
@@ -44,6 +47,14 @@ const Home = () => {
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">Work</Heading>
         <Paragraph>Paragraph here</Paragraph>
+
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Portfolio
+            </Button>
+          </NextLink>
+        </Box>
       </Section>
     </Container>
   );

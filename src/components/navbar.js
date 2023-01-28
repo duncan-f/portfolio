@@ -1,4 +1,5 @@
 import Logo from './logo'
+import { forwardRef } from 'react'
 import NextLink from 'next/link'
 import {
   Container,
@@ -36,6 +37,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </Link>
   );
 }
+
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
   const { path } = props
@@ -82,12 +87,8 @@ const Navbar = props => {
             <Menu>
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="options" />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>Home</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
+                <MenuItem as={MenuLink} href="/">Home</MenuItem>
+                <MenuItem as={MenuLink} href="/works">Works</MenuItem>
                 <MenuItem as={Link} href="https://duncan-f.github.io/" target="_blank">Blog</MenuItem>
               </MenuList>
             </Menu>
