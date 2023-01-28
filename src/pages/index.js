@@ -7,6 +7,7 @@ import {
   Button,
   Link
 } from '@chakra-ui/react'
+import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
@@ -14,6 +15,7 @@ import { Bio, BioYear } from '../components/bio';
 
 const Home = () => {
   return (
+    <Layout>
     <Container>
       <Box
         display={{md: 'flex'}}
@@ -66,6 +68,7 @@ const Home = () => {
         </Bio>
       </Section>
     </Container>
+    </Layout>
   );
 };
 
