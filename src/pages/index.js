@@ -64,7 +64,7 @@ const Home = () => {
         <Paragraph>I&apos;m a Geophysics Engineer and a self-taught web developer passionate about Cyber Security, Ethical Hacking and CTFs.</Paragraph>
 
         <Box align="center" my={4}>
-          <NextLink href="/works">
+          <NextLink href="/projects">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
               My Portfolio
             </Button>
