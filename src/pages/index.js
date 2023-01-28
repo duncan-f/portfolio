@@ -19,7 +19,6 @@ const Home = () => {
         display={{md: 'flex'}}
         p={3}
         mb={6}
-        mt={16}
         textAlign="center"
       >
         <Box flexGrow={1}>
@@ -30,7 +29,7 @@ const Home = () => {
           flexShrink={0}
           mt={{base: 4, md: 0}}
           ml={{md: 6}}
-          align="center"
+          textAlign="center"
         >
           <Image
             borderColor="whiteAlpha.800"
@@ -47,7 +46,7 @@ const Home = () => {
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">Work</Heading>
+        <Heading as="h3" variant="section-title">About Me</Heading>
         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
 
         <Box align="center" my={4}>
