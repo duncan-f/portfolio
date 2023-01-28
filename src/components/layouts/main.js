@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../navbar';
 import { Box, Container } from '@chakra-ui/react';
+import Footer from '../footer';
 
 
 const Main = ({ children, router }) => {
@@ -12,13 +13,15 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Farouk Mokhtari" />
         <meta name="author" content="dunCan" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <title>Personal Website &bull; Farouk Mokhtari</title>
+        <title>Farouk Mokhtari</title>
       </Head>
 
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={20}>
         {children}
+
+        <Footer />
       </Container>
     </Box>
   );

@@ -5,17 +5,26 @@ import {
   Heading,
   Image,
   Button,
-  Link
+  Link,
+  SimpleGrid,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Bio, BioYear } from '../components/bio';
+import { GridItem } from '@chakra-ui/react';
+import {
+  IoLogoTwitter,
+  IoLogoGithub,
+} from 'react-icons/io5';
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout title="Home">
     <Container>
       <Box
         display={{md: 'flex'}}
@@ -53,7 +62,7 @@ const Home = () => {
 
         <Box align="center" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="orange">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
               My Portfolio
             </Button>
           </NextLink>
@@ -66,6 +75,39 @@ const Home = () => {
           Engineer in Geophysics, Algeria, {' '}
           <Link href="https://www.usthb.dz/" target="_blank">USTHB</Link>.
         </Bio>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">On the web</Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/duncan-f" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="green"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >duncan-f</Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="http://twitter.com/duncan12back" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="green"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >@duncan12back</Button>
+            </Link>
+          </ListItem>
+        </List>
+
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem href="https://youtube.com/dunCan" title="dunCan">
+            Grid1
+          </GridItem>
+          <GridItem href="https://youtube.com/dunCan" title="dunCan">
+            Grid2
+          </GridItem>
+        </SimpleGrid>
       </Section>
     </Container>
     </Layout>
