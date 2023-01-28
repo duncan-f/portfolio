@@ -29,7 +29,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       target={target}
       p={2}
       alignItems="center"
-      bg={active ? 'glassTeal' : undefined}
+      bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
       {...props}
     >
