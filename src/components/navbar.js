@@ -15,6 +15,7 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
+import { IoOpenOutline } from 'react-icons/io5'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
@@ -78,18 +79,32 @@ const Navbar = props => {
           mt={{base: 4, md: 0}}
         >
           <LinkItem href="/works" path={path}>Works</LinkItem>
-          <LinkItem href="https://duncan-f.github.io/" target="_blank" path={path}>Blog</LinkItem>
+          <LinkItem
+            href="https://duncan-f.github.io/"
+            target="_blank"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            Blog
+            <IoOpenOutline />
+          </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
-            <Menu isLazy id="navbar-menu">
+            <Menu>
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">About</MenuItem>
                 <MenuItem as={MenuLink} href="/works">Works</MenuItem>
-                <MenuItem as={Link} href="https://duncan-f.github.io/" target="_blank">Blog</MenuItem>
+                <MenuItem as={Link} href="https://duncan-f.github.io/" target="_blank" pl={2} style={{gap: 4}}>
+                  Blog
+                  <IoOpenOutline />
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

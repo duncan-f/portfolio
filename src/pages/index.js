@@ -21,7 +21,8 @@ import {
   IoLogoTwitter,
   IoLogoGithub,
   IoLogoBitcoin,
-  IoLogoLinkedin
+  IoLogoLinkedin,
+  IoMailOutline
 } from 'react-icons/io5';
 
 const Home = () => {
@@ -131,7 +132,18 @@ const Home = () => {
 
       <Section delay={0.5}>
         <Heading as="h3" variant="section-title">On the web</Heading>
-        <List>
+        <List mb={5}>
+          <ListItem>
+            <Link href="mailto:fmokhtari@mail.ru">
+              <Button
+                mb={2}
+                variant="ghost"
+                colorScheme="green"
+                leftIcon={<Icon as={IoMailOutline} />}
+              >fmokhtari@mail.ru</Button>
+            </Link>
+          </ListItem>
+
           <ListItem>
             <Link href="https://github.com/duncan-f" target="_blank">
               <Button
@@ -163,15 +175,6 @@ const Home = () => {
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >@duncan12back</Button>
             </Link>
-          </ListItem>
-
-          <ListItem>
-              <Button
-                mb={9}
-                variant="ghost"
-                colorScheme="green"
-                leftIcon={<Icon as={IoLogoBitcoin} />}
-              >1JJmuidSTRCugnBKH8H7bDxEmTtAAg4kyn</Button>
           </ListItem>
         </List>
 
