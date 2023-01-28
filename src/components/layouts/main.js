@@ -7,7 +7,7 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
-        <head  name="viewport" content="width=device-width, initial-scale=1" />
+        <head name="viewport" content="width=device-width, initial-scale=1" />
         <title>Personal Website</title>
       </Head>
 
