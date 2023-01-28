@@ -72,7 +72,7 @@ const Navbar = props => {
         <Stack
           direction={{base: 'column', md: 'row'}}
           display={{base: 'none', md: 'flex'}}
-          with={{base: 'full', md: 'auto'}}
+          width={{base: 'full', md: 'auto'}}
           alignItems="center"
           flexGrow={1}
           mt={{base: 4, md: 0}}
@@ -84,10 +84,9 @@ const Navbar = props => {
           <ThemeToggleButton />
 
           <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
-            <Menu>
-              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="options" />
+            <Menu isLazy id="navbar-menu">
+              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">Home</MenuItem>
                 <MenuItem as={MenuLink} href="/works">Works</MenuItem>
                 <MenuItem as={Link} href="https://duncan-f.github.io/" target="_blank">Blog</MenuItem>
               </MenuList>

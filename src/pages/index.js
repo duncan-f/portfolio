@@ -4,11 +4,13 @@ import {
   Box,
   Heading,
   Image,
-  Button
+  Button,
+  Link
 } from '@chakra-ui/react'
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Bio, BioYear } from '../components/bio';
 
 const Home = () => {
   return (
@@ -46,15 +48,23 @@ const Home = () => {
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">Work</Heading>
-        <Paragraph>Paragraph here</Paragraph>
+        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
 
         <Box align="center" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="orange">
               My Portfolio
             </Button>
           </NextLink>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">Education</Heading>
+        <Bio>
+          <BioYear>2012</BioYear>
+          Engineer in Geophysics, Algeria, {' '}
+          <Link href="https://www.usthb.dz/" target="_blank">USTHB</Link>.
+        </Bio>
       </Section>
     </Container>
   );
