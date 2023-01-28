@@ -20,6 +20,8 @@ import { GridItem } from '@chakra-ui/react';
 import {
   IoLogoTwitter,
   IoLogoGithub,
+  IoLogoBitcoin,
+  IoLogoLinkedin
 } from 'react-icons/io5';
 
 const Home = () => {
@@ -34,7 +36,7 @@ const Home = () => {
       >
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">Farouk Mokhtari</Heading>
-          <p>I&apos;m a Geophysics Engineer and a self-taught web developer passionate about Cyber Security, Ethical Hacking and CTFs.</p>
+          <p>Engineer, Web Developer, Bug Bounty Hunter (Trying to)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -58,7 +60,7 @@ const Home = () => {
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">About Me</Heading>
-        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
+        <Paragraph>I&apos;m a Geophysics Engineer and a self-taught web developer passionate about Cyber Security, Ethical Hacking and CTFs.</Paragraph>
 
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -71,40 +73,113 @@ const Home = () => {
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">Education</Heading>
         <Bio>
+          <BioYear>2020</BioYear>
+          Implementing and Administring Cisco Solutions [without Certification].
+        </Bio>
+
+        <Bio>
+          <BioYear>2017</BioYear>
+          Certificate of Completion, CISSP, {' '}
+          <Link href="https://www.mile2.com/" target="_blank">Mile2</Link>.
+        </Bio>
+
+        <Bio>
           <BioYear>2012</BioYear>
-          Engineer in Geophysics, Algeria, {' '}
+          State Engineer degree in Geophysics, Algeria, {' '}
           <Link href="https://www.usthb.dz/" target="_blank">USTHB</Link>.
+        </Bio>
+
+        <Bio>
+          <BioYear>2003</BioYear>
+          High School diploma: Buildings and Public Works, Algeria.
         </Bio>
       </Section>
 
       <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">Professional Experience</Heading>
+        <Bio>
+          <BioYear>2017</BioYear>
+          National Agency of Valorisation of Hydrocarbones Ressources, Algeria, {' '}
+          <Link href="https://www.alnaft.dz/" target="_blank">ALNAFT</Link>.
+        </Bio>
+
+        <Bio>
+          <BioYear>2015</BioYear>
+          Office of the Geological and Mining Research (ORGM), Algeria.
+        </Bio>
+
+        <Bio>
+          <BioYear>2012</BioYear>
+          Final Practical Training (Internship), Algeria, {' '}
+          <Link href="https://www.sonatrach.dz/" target="_blank">Sonatrach</Link>.
+        </Bio>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">Technologies</Heading>
+        <Paragraph>
+          Python, PHP, MySQL, Javascript, Laravel, Django
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.5}>
+        <Heading as="h3" variant="section-title">Languages</Heading>
+        <Paragraph>
+          English, French, Arabic, Russian
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.5}>
         <Heading as="h3" variant="section-title">On the web</Heading>
         <List>
           <ListItem>
             <Link href="https://github.com/duncan-f" target="_blank">
               <Button
+                mb={2}
                 variant="ghost"
                 colorScheme="green"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >duncan-f</Button>
             </Link>
           </ListItem>
+
           <ListItem>
-            <Link href="http://twitter.com/duncan12back" target="_blank">
+            <Link href="https://www.linkedin.com/in/farouk-mokhtari-560133188" target="_blank">
               <Button
+                mb={2}
+                variant="ghost"
+                colorScheme="green"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >Farouk Mokhtari</Button>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link href="https://twitter.com/duncan12back" target="_blank">
+              <Button
+                mb={2}
                 variant="ghost"
                 colorScheme="green"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >@duncan12back</Button>
             </Link>
           </ListItem>
+
+          <ListItem>
+              <Button
+                mb={9}
+                variant="ghost"
+                colorScheme="green"
+                leftIcon={<Icon as={IoLogoBitcoin} />}
+              >1JJmuidSTRCugnBKH8H7bDxEmTtAAg4kyn</Button>
+          </ListItem>
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem href="https://youtube.com/dunCan" title="dunCan">
+          <GridItem href="https://youtube.com/dunCan" title="Title 1">
             Grid1
           </GridItem>
-          <GridItem href="https://youtube.com/dunCan" title="dunCan">
+          <GridItem href="https://youtube.com/dunCan" title="Title 2">
             Grid2
           </GridItem>
         </SimpleGrid>

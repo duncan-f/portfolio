@@ -87,6 +87,7 @@ const Navbar = props => {
             <Menu isLazy id="navbar-menu">
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
               <MenuList>
+                <MenuItem as={MenuLink} href="/">About</MenuItem>
                 <MenuItem as={MenuLink} href="/works">Works</MenuItem>
                 <MenuItem as={Link} href="https://duncan-f.github.io/" target="_blank">Blog</MenuItem>
               </MenuList>
