@@ -15,17 +15,19 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Bio, BioYear } from '../components/bio';
 import { GridItem } from '@chakra-ui/react';
 import {
   IoLogoTwitter,
   IoLogoGithub,
+  IoLogoBitcoin,
   IoLogoLinkedin,
   IoMailOutline
 } from 'react-icons/io5';
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout title="Home">
     <Container>
       <Box
         display={{md: 'flex'}}
@@ -74,22 +76,41 @@ const Home = () => {
           </NextLink>
         </Box>
       </Section>
-
       <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">Education</Heading>
+        <Bio>
+          <BioYear>2020</BioYear>
+          Implementing and Administring Cisco Solutions [without Certification].
+        </Bio>
+
+        <Bio>
+          <BioYear>2017</BioYear>
+          Certificate of Completion, CISSP, {' '}
+          <Link href="https://www.mile2.com/" target="_blank">Mile2</Link>.
+        </Bio>
+
+        <Bio>
+          <BioYear>2012</BioYear>
+          State Engineer degree in Geophysics, Algeria, {' '}
+          <Link href="https://www.usthb.dz/" target="_blank">USTHB</Link>.
+        </Bio>
+      </Section>
+
+      <Section delay={0.5}>
         <Heading as="h3" variant="section-title">Technologies</Heading>
         <Paragraph>
           Python, PHP, MySQL, Javascript, Laravel, Django
         </Paragraph>
       </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title">Languages</Heading>
         <Paragraph>
           English, French, Arabic, Russian
         </Paragraph>
       </Section>
 
-      <Section delay={0.4}>
+      <Section delay={0.7}>
         <Heading as="h3" variant="section-title">On the web</Heading>
         <List mb={5}>
           <ListItem>
@@ -141,7 +162,7 @@ const Home = () => {
           <GridItem href="https://www.youtube.com/channel/UCLnHtoPGupyvDho6FB7rQHg" title="dunCan">
             Grid1
           </GridItem>
-          <GridItem href="https://youtube.com/" title="Title 2">
+          <GridItem href="https://youtube.com/dunCan" title="Title 2">
             Grid2
           </GridItem>
         </SimpleGrid>
