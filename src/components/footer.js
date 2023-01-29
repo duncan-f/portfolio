@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Link } from '@chakra-ui/react'
 
 const Footer = () => {
   return (
@@ -9,7 +9,8 @@ const Footer = () => {
       fontSize="sm"
       flexShrink={0}
     >
-      &copy; {new Date().getFullYear()} Farouk Mokhtari. All Rights Reserved.
+      &copy; {new Date().getFullYear()} Farouk Mokhtari. All Rights Reserved. Website inspired by {' '}
+      <Link href="https://www.craftz.dog/" target="_blank">Takuya Matsuyama</Link>
     </Box>
   )
 }

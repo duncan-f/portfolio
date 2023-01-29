@@ -12,30 +12,29 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Project = () => (
-  <Layout title="Blog">
+  <Layout title="Portfolio">
     <Container>
       <Title>
-        Blog <Badge>2022</Badge>
+        Portfolio <Badge>2023</Badge>
       </Title>
       <P>
-        This website is my blog, and it is a project that I&apos;ve tried and powered by {' '}
-        <Link href="https://gohugo.io/" target="_blank">Hugo</Link>.
-        With Hugo framework it&apos;s easy to implement a fully functional static website.
+        This is the current website. Since I&apos;m learing ReactJS Stack,
+        I just wanted to try and code a portfolio using React and NextJS.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://duncan-f.github.io/" target="_blank">
-            https://duncan-f.github.io/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://mokhtari.netlify.app/" target="_blank">
+            https://mokhtari.netlify.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>HTML, CSS, Javascript</span>
+          <span>ReactJS, NextJS, Javascript</span>
         </ListItem>
       </List>
 
-      <ProjectImage src="/images/projects/blog.png" alt="Blog" />
+      <ProjectImage src="/images/projects/portfolio.png" alt="Blog" />
     </Container>
   </Layout>
 )
