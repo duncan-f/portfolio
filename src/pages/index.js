@@ -20,14 +20,13 @@ import { GridItem } from '@chakra-ui/react';
 import {
   IoLogoTwitter,
   IoLogoGithub,
-  IoLogoBitcoin,
   IoLogoLinkedin,
   IoMailOutline
 } from 'react-icons/io5';
 
 const Home = () => {
   return (
-    <Layout title="Home">
+    <Layout>
     <Container>
       <Box
         display={{md: 'flex'}}
