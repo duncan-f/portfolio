@@ -16,13 +16,14 @@ import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Bio, BioYear } from '../components/bio';
-import { GridItem } from '@chakra-ui/react';
+import { GridItem } from '../components/grid-item';
 import {
   IoLogoTwitter,
   IoLogoGithub,
   IoLogoLinkedin,
   IoMailOutline
 } from 'react-icons/io5';
+import thumbYoutube from '../../public/images/youtube.png';
 
 const Home = () => {
   return (
@@ -158,11 +159,12 @@ const Home = () => {
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem href="https://www.youtube.com/channel/UCLnHtoPGupyvDho6FB7rQHg" title="dunCan">
-            Grid1
-          </GridItem>
-          <GridItem href="https://youtube.com/dunCan" title="Title 2">
-            Grid2
+          <GridItem
+            href="https://youtube.com/@dunCan213"
+            title="dunCan"
+            thumbnail={thumbYoutube}
+          >
+            My YouTube Channel
           </GridItem>
         </SimpleGrid>
       </Section>
