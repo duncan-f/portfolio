@@ -18,7 +18,8 @@ const Project = () => (
       </Title>
       <P>
         This is the current website. Since I&apos;m learing ReactJS Stack,
-        I just wanted to try and code a portfolio using React and NextJS.
+        I just wanted to try and code a portfolio using React and NextJS, and
+        I combined it with Chakra UI for the interface.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -29,7 +30,7 @@ const Project = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>ReactJS, NextJS, Javascript</span>
+          <span>Chakra UI, ReactJS, NextJS, Javascript</span>
         </ListItem>
       </List>
 

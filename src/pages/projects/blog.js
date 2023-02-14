@@ -17,8 +17,12 @@ const Project = () => (
         Blog <Badge>2022</Badge>
       </Title>
       <P>
-        This website is my blog, and it is a project that I&apos;ve tried and powered by {' '}
-        <Link href="https://gohugo.io/" target="_blank">Hugo</Link>.
+        This website is my blog, and it is a project that I&apos;ve tried and
+        powered by {' '}
+        <Link href="https://gohugo.io/" target="_blank">
+          Hugo
+          <ExternalLinkIcon />
+        </Link>.
         With Hugo framework it&apos;s easy to implement a fully functional static website.
       </P>
       <List ml={4} my={4}>
@@ -30,7 +34,7 @@ const Project = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>HTML, CSS, Javascript</span>
+          <span>Hugo, HTML, CSS, Javascript</span>
         </ListItem>
       </List>
 

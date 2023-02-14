@@ -64,13 +64,11 @@ const Home = () => {
         <Paragraph>
           I&apos;m a Geophysics Engineer and a self-taught web developer
           passionate about Cyber Security, Ethical Hacking and CTFs.
-          You can find my {' '}
-          <Link href="resume.en.pdf">resume here</Link>.
         </Paragraph>
 
         <Box align="center" my={4}>
           <NextLink href="/projects">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="red">
               My Portfolio
             </Button>
           </NextLink>
@@ -106,7 +104,7 @@ const Home = () => {
       <Section delay={0.6}>
         <Heading as="h3" variant="section-title">Languages</Heading>
         <Paragraph>
-          English, French, Arabic, Russian
+          Berberian, English, French, Arabic, Russian
         </Paragraph>
       </Section>
 
@@ -118,7 +116,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="green"
+                colorScheme="red"
                 leftIcon={<Icon as={IoMailOutline} />}
               >fmokhtari@mail.ru</Button>
             </Link>
@@ -129,7 +127,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="green"
+                colorScheme="red"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >duncan-f</Button>
             </Link>
@@ -140,7 +138,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="green"
+                colorScheme="red"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >Farouk Mokhtari</Button>
             </Link>
@@ -151,7 +149,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="green"
+                colorScheme="red"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >@duncan12back</Button>
             </Link>
