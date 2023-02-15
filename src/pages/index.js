@@ -54,7 +54,7 @@ const Home = () => {
             display="inline-block"
             borderRadius="full"
             src="/images/duncan.png"
-            alt="Profie picture"
+            alt="Profile picture"
           />
         </Box>
       </Box>
@@ -68,7 +68,7 @@ const Home = () => {
 
         <Box align="center" my={4}>
           <NextLink href="/projects">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="red">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="orange">
               My Portfolio
             </Button>
           </NextLink>
@@ -116,7 +116,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="red"
+                colorScheme="orange"
                 leftIcon={<Icon as={IoMailOutline} />}
               >fmokhtari@mail.ru</Button>
             </Link>
@@ -127,7 +127,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="red"
+                colorScheme="orange"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >duncan-f</Button>
             </Link>
@@ -138,7 +138,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="red"
+                colorScheme="orange"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >Farouk Mokhtari</Button>
             </Link>
@@ -149,7 +149,7 @@ const Home = () => {
               <Button
                 mb={2}
                 variant="ghost"
-                colorScheme="red"
+                colorScheme="orange"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >@duncan12back</Button>
             </Link>

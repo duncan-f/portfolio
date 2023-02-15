@@ -26,7 +26,7 @@ const components = {
 
   Link: {
     baseStyle: props => ({
-      color: mode('#3d7aed', '#fc4f46')(props),
+      color: mode('#3d7aed', '#f76200')(props),
       textUnderlineOffset: 3
     })
   }
@@ -39,6 +39,7 @@ const fonts = {
 const colors = {
   grassTeal: '#88ccca',
   lightRed: '#ce2d1e',
+  lightOrange: '#fc792d',
   lightGreen: '#67fccf',
   darkPurple: '#400093',
   lightPurple: '#913ffc'
