@@ -37,7 +37,7 @@ const Home = () => {
       >
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">Farouk Mokhtari</Heading>
-          <p>Engineer, Web Developer, Bug Bounty Hunter (Trying to)</p>
+          <p>Engineer, Web Developer, Bug Bounty Hunter (Trying to...)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -84,18 +84,18 @@ const Home = () => {
         <Bio>
           <BioYear>2017</BioYear>
           Certificate of Completion, CISSP, {' '}
-          <Link href="https://www.mile2.com/" target="_blank">Mile2</Link>.
+          <Link href="https://www.mile2.com/" isExternal>Mile2</Link>.
         </Bio>
 
         <Bio>
           <BioYear>2012</BioYear>
           State Engineer degree in Geophysics, Algeria, {' '}
-          <Link href="https://www.usthb.dz/" target="_blank">USTHB</Link>.
+          <Link href="https://www.usthb.dz/" isExternal>USTHB</Link>.
         </Bio>
       </Section>
 
       <Section delay={0.5}>
-        <Heading as="h3" variant="section-title">Technologies</Heading>
+        <Heading as="h3" variant="section-title">Technologies I use</Heading>
         <Paragraph>
           Python, PHP, MySQL, Javascript, Laravel, Django
         </Paragraph>
@@ -123,7 +123,7 @@ const Home = () => {
           </ListItem>
 
           <ListItem>
-            <Link href="https://github.com/duncan-f" target="_blank">
+            <Link href="https://github.com/duncan-f" isExternal>
               <Button
                 mb={2}
                 variant="ghost"
@@ -134,7 +134,10 @@ const Home = () => {
           </ListItem>
 
           <ListItem>
-            <Link href="https://www.linkedin.com/in/farouk-mokhtari-560133188" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/farouk-mokhtari-560133188"
+              isExternal
+            >
               <Button
                 mb={2}
                 variant="ghost"
@@ -145,7 +148,7 @@ const Home = () => {
           </ListItem>
 
           <ListItem>
-            <Link href="https://twitter.com/duncan12back" target="_blank">
+            <Link href="https://twitter.com/duncan12back" isExternal>
               <Button
                 mb={2}
                 variant="ghost"

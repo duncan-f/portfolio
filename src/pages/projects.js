@@ -1,6 +1,5 @@
 import {
   Container,
-  Box,
   Heading,
   SimpleGrid,
   Divider
@@ -11,6 +10,7 @@ import { ProjectGridItem } from "../components/grid-item";
 
 import blog from '../../public/images/projects/blog.png'
 import portfolio from '../../public/images/projects/portfolio.png'
+import geoservices from '../../public/images/projects/geoservices.png'
 
 const Projects = () => {
   return (
@@ -19,15 +19,29 @@ const Projects = () => {
       <Heading as="h3" fontSize={20} mb={4}>Projects</Heading>
       <SimpleGrid columns={[1,1,2]} gap={6}>
         <Section>
-          <ProjectGridItem id="blog" title="Blog" thumbnail={blog}>
+          <ProjectGridItem
+            id="portfolio"
+            title="My Portfolio"
+            thumbnail={portfolio}
+          >
+            This is the current website. Since I&apos;m learing ReactJS Stack,
+            I just wanted to try and code a portfolio using React and NextJS.
+          </ProjectGridItem>
+        </Section>
+        <Section>
+          <ProjectGridItem id="blog" title="My Blog" thumbnail={blog}>
             This is my blog, it is powered by Hugo. It&apos;s where I share
             my knowledge in technology.
           </ProjectGridItem>
         </Section>
         <Section>
-          <ProjectGridItem id="portfolio" title="Portfolio" thumbnail={portfolio}>
-            This is the current website. Since I&apos;m learing ReactJS Stack,
-            I just wanted to try and code a portfolio using React and NextJS.
+          <ProjectGridItem
+            id="geoservices"
+            title="S.B. Géoservices Inc."
+            thumbnail={geoservices}
+          >
+            This is a landing page I created for a company that operates in
+            geoscience.
           </ProjectGridItem>
         </Section>
       </SimpleGrid>
