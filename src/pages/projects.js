@@ -25,7 +25,8 @@ const Projects = () => {
             thumbnail={portfolio}
           >
             This is the current website. Since I&apos;m learing ReactJS Stack,
-            I just wanted to try and code a portfolio using React and NextJS.
+            I just wanted to try and code a portfolio using React and NextJS,
+            combined with Chakra UI.
           </ProjectGridItem>
         </Section>
         <Section>
@@ -40,7 +41,7 @@ const Projects = () => {
             title="S.B. Géoservices Inc."
             thumbnail={geoservices}
           >
-            This is a landing page I created for a company that operates in
+            This is a website I created for a company that operates in
             geoscience.
           </ProjectGridItem>
         </Section>
